@@ -1,8 +1,11 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ActorProtagonico from "./components/ActorProtagonico";
+import ActrizProtagonico from "./components/ActrizProtagonico";
 import { Contactos } from "./components/Contactos";
 import { CrearPeliculas } from "./components/CrearPeliculas";
 import { Crearpost } from "./components/Crearpost";
+import Director from './components/Director';
 import { EditarPelicula } from "./components/EditarPeliculas";
 import { EditarPost } from "./components/EditarPost";
 import { Footer } from "./components/Footer";
@@ -40,6 +43,8 @@ const App = () => {
           element={<EditarPelicula />}
         />
         <Route path="/src/components/Director.jsx" element={< Director />} />
+        <Route path="/src/components/ActorProtagonico.jsx" element={< ActorProtagonico />} />
+        <Route path="/src/components/ActrizProtagonico.jsx" element={< ActrizProtagonico />} />
         <Route path="/src/components/Contactos.jsx" element={<Contactos />} />
       </Routes>
       <Footer></Footer>

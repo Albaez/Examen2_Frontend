@@ -23,16 +23,6 @@ export const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarColor01">
             <ul className="navbar-nav me-auto">
               
-
-            
-
-              <li className="nav-item">
-                <Link to="/src/components/Muro.jsx" className="nav-link active">
-                  Muro
-                </Link>
-              </li>
-
-
               <li className="nav-item">
                 <Link to="/src/components/MuroPeliculas.jsx" className="nav-link active">
                Peliculas Nominadas
@@ -59,7 +49,22 @@ export const Navbar = () => {
                 </Link>
               </li>
 
+              <li className="nav-item">
+                <Link
+                  to="/src/components/ActorProtagonico.jsx"
+                  className="nav-link active"
+                >
+                  Actor Protagonico
+                </Link>
+              </li>
 
+            
+              <li className="nav-item">
+                <Link to="/src/components/ActrizProtagonico.jsx" 
+                className="nav-link active">
+                  Actriz Protagonico
+                </Link>
+              </li>
               
               <li className="nav-item">
                 <Link
@@ -71,14 +76,7 @@ export const Navbar = () => {
                 </Link>
               </li>
 
-              <li className="nav-item">
-                <Link
-                  to="/src/components/InicioSesion.jsx"
-                  className="nav-link active"
-                >
-                  Inicio de Sesion
-                </Link>
-              </li>
+           
 
               <li className="nav-item">
                 <Link to="/src/components/Contactos.jsx" className="nav-link">

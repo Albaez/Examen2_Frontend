@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 
 export const EditarPelicula = () => {
-  const { idPelicula } = useParams();
+  const { id } = useParams();
 
   const [data, setData] = useState({
     caption: "",
@@ -17,7 +17,7 @@ export const EditarPelicula = () => {
 
   const handlerSubmit = async () => {
     event.preventDefault();
-    const url = `http://localhost:4000/api/pelicula/${idPelicula}`;
+    const url = `http://localhost:4000/api/pelicula/${id}`;
     const result = await axios.put(url, data);
     const resultData = (await result).data;
 
